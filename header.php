@@ -3,8 +3,15 @@
 <head>
 <meta charset="<?php bloginfo( 'charset' ); ?>">
 <title>展覧会について｜日本の景色写真集</title>
-<link rel="stylesheet" href="css/style.css">
-<link rel="stylesheet" href="css/common.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+$(function(){
+  $("#pickup_field").SlideShow({
+    now_id :1,
+    slideSpeed : 2000
+  });
+});
+</script>
 <?php wp_head(); ?>
 </head>
 <body<?php body_class(); ?>>
@@ -12,16 +19,23 @@
     <h1>
       <a href="<?php echo home_url( '/' ); ?>">
         <?php
-					
+					$custom_logo_id = get_theme_mod( 'custom_logo' );
+					$image = wp_get_attachment_image_src( $custom_logo_id, 'full' );
+					$format  = '<img';
+					$format .= ' src="' . $image[0] . '"';
+					$format .= ' width="' . $image[1] . '"';
+					$format .= ' height="' . $image[2] . '"';
+					$format .= ' alt="' . get_bloginfo( 'name' ) . '">';
+					echo $format;
 				?>
       </a>
     </h1>
   </header>
 	<nav class="nav-global">
-    <ul>
-      <li><a href="introduction.html">展覧会について</a></li>
-      <li><a href="schedule.html">スケジュール</a></li>
-      <li><a href="gallery.html">作品紹介</a></li>
-      <li><a href="tickets.html">前売り券申し込み</a></li>
-    </ul>
+	<?php	wp_nav_menu(
+			array(
+				'theme_location' => 'primary1'
+			)
+		);
+	?>
   </nav>
