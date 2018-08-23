@@ -33,16 +33,16 @@ header h1{
   padding-top: 64px;
 }
 .nav-global ul li:nth-child(1) a{
-  background-image: url(<?php echo get_template_directory_uri(); ?>/images/btn_navigation1.png);
+  background-image: url(images/btn_navigation1.png);
 }
 .nav-global ul li:nth-child(2) a{
-  background-image: url(<?php echo get_template_directory_uri(); ?>/images/btn_navigation2.png);
+  background-image: url(images/btn_navigation2.png);
 }
 .nav-global ul li:nth-child(3) a{
-  background-image: url(<?php echo get_template_directory_uri(); ?>/images/btn_navigation3.png);
+  background-image: url(images/btn_navigation3.png);
 }
 .nav-global ul li:nth-child(4) a{
-  background-image: url(<?php echo get_template_directory_uri(); ?>/images/btn_navigation4.png);
+  background-image: url(images/btn_navigation4.png);
 }
 .nav-global ul li a:hover{
   background-position: 0 -64px;
@@ -82,8 +82,8 @@ main{
   text-align: center;
 }
 main h1{
-  background-image: url(<?php echo get_template_directory_uri(); ?>/images/h1_top.png),
-										url(<?php echo get_template_directory_uri(); ?>/images/h1_bottom.png);
+  background-image: url(images/h1_top.png),
+										url(images/h1_bottom.png);
   background-repeat: no-repeat,no-repeat;
   background-position: center top,center bottom;
   font-size: 175%;
@@ -113,10 +113,10 @@ footer div:nth-child(1){
   text-align: right;
 }
 footer div:nth-child(2){
-  background-image: url(<?php echo get_template_directory_uri(); ?>/images/footer_bottom.png);
+  background-image: url(images/footer_bottom.png);
 }
 footer nav {
-  background-image: url(<?php echo get_template_directory_uri(); ?>/images/pagetop.gif);
+  background-image: url(images/pagetop.gif);
   background-repeat: no-repeat;
   background-position: left center;
   cursor: pointer;
@@ -143,7 +143,7 @@ footer small{
   margin-right: 2em;
 }
 .sec-field h2{
-  background-image: url(<?php echo get_template_directory_uri(); ?>/images/h2.gif);
+  background-image: url(images/h2.gif);
   background-repeat: no-repeat;
   background-position: left center;
   text-indent: 1em;
