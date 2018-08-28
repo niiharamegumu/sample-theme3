@@ -12,13 +12,20 @@
 		<section class="topics">
 			<h2>トピックス</h2>
 			<ul>
-				<?php query_posts( 'posts_per_page=3' ); ?>
+				<?php
+					$args = array(
+						'posts_per_page' => 3
+					);
+					query_posts( $args );
+				?>
 				<?php while( have_posts() ) : the_post(); ?>
 					<li>
 						<time datetime="<?php the_time( 'Y-m-d' ); ?>">
 							<?php the_time( get_option( 'date_format' ) ) ?>
 						</time>
-						<?php the_title(); ?>
+						<a href="<?php the_permalink(); ?>">
+							<?php the_title(); ?>
+						</a>
 					</li>
 			<?php endwhile; ?>
 			</ul>

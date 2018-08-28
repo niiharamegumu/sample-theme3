@@ -60,6 +60,10 @@ header h1{
 .bread-crumb ol:nth-child(1) li{
   margin-right: 1em;
 }
+.bread-crumb li:not(:last-child)::after {
+  content: ">";
+  padding-left: 15px;
+}
 .contents{
   display: flex;
   justify-content: space-between;
@@ -132,6 +136,9 @@ footer small{
 .sec-field {
 	margin-bottom: 30px;
 	overflow: hidden;
+}
+.sec-field img {
+	float: left;
 }
 .sec-field:last-child{
 	margin-bottom: 0;
