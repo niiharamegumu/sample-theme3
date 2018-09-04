@@ -27,11 +27,12 @@ $(function(){
 					$format .= ' alt="' . get_bloginfo( 'name' ) . '">';
 					echo $format;
 				?>
-      </a>
-    </h1>
-  </header>
+			</a>
+		</h1>
+	</header>
 	<nav class="nav-global">
-	<?php	wp_nav_menu(
+	<?php
+		wp_nav_menu(
 			array(
 				'theme_location' => 'primary1'
 			)
