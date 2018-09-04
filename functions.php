@@ -27,11 +27,10 @@ add_action( 'after_setup_theme', 'theme_setup' );
  *
 */
 function theme_styles (){
-wp_enqueue_style( 'theme-style', get_stylesheet_uri() );
-wp_enqueue_style( 'theme-common', get_template_directory_uri() . '/css/common.css' );
+	wp_enqueue_style( 'theme-style', get_stylesheet_uri() );
+	wp_enqueue_style( 'theme-common', get_template_directory_uri() . '/css/common.css' );
 }
-
-add_action('wp_enqueue_scripts', 'theme_styles');
+add_action( 'wp_enqueue_scripts', 'theme_styles' );
 
 /**
  *ウィジェット設定
