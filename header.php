@@ -14,10 +14,10 @@ $(function(){
 <?php wp_head(); ?>
 </head>
 <body <?php body_class(); ?>>
-  <header>
-    <h1>
-      <a href="<?php echo home_url( '/' ); ?>">
-        <?php
+	<header>
+		<h1>
+			<a href="<?php echo home_url( '/' ); ?>">
+			<?php
 					$custom_logo_id = get_theme_mod( 'custom_logo' );
 					$image = wp_get_attachment_image_src( $custom_logo_id, 'full' );
 					$format  = '<img';
@@ -37,4 +37,4 @@ $(function(){
 			)
 		);
 	?>
-  </nav>
+	</nav>
