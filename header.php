@@ -13,7 +13,7 @@ $(function(){
 </script>
 <?php wp_head(); ?>
 </head>
-<body<?php body_class(); ?>>
+<body <?php body_class(); ?>>
   <header>
     <h1>
       <a href="<?php echo home_url( '/' ); ?>">
