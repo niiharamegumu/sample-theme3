@@ -77,4 +77,3 @@ function theme_search_keyword( $str ) {
 }
 add_action( 'get_the_excerpt', 'theme_search_keyword' );
 add_action( 'the_title', 'theme_search_keyword' );
-?>
