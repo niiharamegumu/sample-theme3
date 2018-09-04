@@ -6,7 +6,7 @@
 			電話 <a href="tel:0120-XXX-001">0120-XXX-001</a>
 			FAX 0120-XXX-002
 		</address>
-		<small>Copylight 2015 日本の景色写真展 All raights reserved.</small>
+		<small>Copyright 2015 日本の景色写真展 All rights reserved.</small>
 	</div>
 </footer>
 
