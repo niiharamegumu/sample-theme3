@@ -1,8 +1,7 @@
 <!DOCTYPE html>
-<html lang="<?php language_attributes(); ?>">
+<html <?php language_attributes(); ?>>
 <head>
 <meta charset="<?php bloginfo( 'charset' ); ?>">
-<title>展覧会について｜日本の景色写真集</title>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script>
 $(function(){
@@ -14,11 +13,11 @@ $(function(){
 </script>
 <?php wp_head(); ?>
 </head>
-<body<?php body_class(); ?>>
-  <header>
-    <h1>
-      <a href="<?php echo home_url( '/' ); ?>">
-        <?php
+<body <?php body_class(); ?>>
+	<header>
+		<h1>
+			<a href="<?php echo home_url( '/' ); ?>">
+			<?php
 					$custom_logo_id = get_theme_mod( 'custom_logo' );
 					$image = wp_get_attachment_image_src( $custom_logo_id, 'full' );
 					$format  = '<img';
@@ -28,14 +27,15 @@ $(function(){
 					$format .= ' alt="' . get_bloginfo( 'name' ) . '">';
 					echo $format;
 				?>
-      </a>
-    </h1>
-  </header>
+			</a>
+		</h1>
+	</header>
 	<nav class="nav-global">
-	<?php	wp_nav_menu(
+	<?php
+		wp_nav_menu(
 			array(
 				'theme_location' => 'primary1'
 			)
 		);
 	?>
-  </nav>
+	</nav>
