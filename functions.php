@@ -32,6 +32,17 @@ function theme_styles (){
 }
 add_action( 'wp_enqueue_scripts', 'theme_styles' );
 
+
+/**
+ * スタイルシートの追加
+ *
+ * @version 1.0.0
+ * @since   1.0.0
+ *@author   N.megumu
+ *
+*/
+
+function
 /**
  *ウィジェット設定
  *
