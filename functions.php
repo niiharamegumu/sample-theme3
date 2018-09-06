@@ -31,7 +31,6 @@ function theme_styles (){
 	wp_enqueue_style( 'theme-common', get_template_directory_uri() . '/css/common.css' );
 }
 add_action( 'wp_enqueue_scripts', 'theme_styles' );
-
 /**
  *ウィジェット設定
  *
@@ -39,7 +38,6 @@ add_action( 'wp_enqueue_scripts', 'theme_styles' );
  * @since 1.0.0
  * @author N.megumu
 */
-
 function theme_widgets_init() {
 	register_sidebar(
 		array(
@@ -76,3 +74,9 @@ function theme_search_keyword( $str ) {
 }
 add_action( 'get_the_excerpt', 'theme_search_keyword' );
 add_action( 'the_title', 'theme_search_keyword' );
+
+
+// function wp_scripts(){
+// 	wp_enqueue_script( 'page-top-js', get_template_directory_uri() . '/js/pagetop.js', array( ‘jquery’ ));
+// }
+// add_action( 'wp_enqueue_scripts', 'wp_scripts' );

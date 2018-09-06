@@ -2,7 +2,7 @@
 <html <?php language_attributes(); ?>>
 <head>
 <meta charset="<?php bloginfo( 'charset' ); ?>">
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> -->
 <script>
 $(function(){
 	$("#pickup_field").SlideShow({
@@ -17,7 +17,6 @@ $(function(){
 	<header>
 		<h1>
 			<a href="<?php echo home_url( '/' ); ?>">
-				<?php
 			<?php
 					$custom_logo_id = get_theme_mod( 'custom_logo' );
 					$image = wp_get_attachment_image_src( $custom_logo_id, 'full' );
