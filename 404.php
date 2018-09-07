@@ -3,10 +3,10 @@
 
 <div class="contents">
 	<main>
-			<article>
+			<section>
 				<h1>404 Not Found</h1>
 				<p>検索した内容がございません。</p>
-			</article>
+			</section>
 	</main>
 
 <?php

@@ -32,17 +32,6 @@ function theme_styles (){
 }
 add_action( 'wp_enqueue_scripts', 'theme_styles' );
 
-
-/**
- * スタイルシートの追加
- *
- * @version 1.0.0
- * @since   1.0.0
- *@author   N.megumu
- *
-*/
-
-function
 /**
  *ウィジェット設定
  *
@@ -50,7 +39,6 @@ function
  * @since 1.0.0
  * @author N.megumu
 */
-
 function theme_widgets_init() {
 	register_sidebar(
 		array(
@@ -87,3 +75,4 @@ function theme_search_keyword( $str ) {
 }
 add_action( 'get_the_excerpt', 'theme_search_keyword' );
 add_action( 'the_title', 'theme_search_keyword' );
+
